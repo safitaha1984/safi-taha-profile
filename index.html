@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>م. صافي طه | مستشار تقني وتنفيذي وخبير الذكاء الاصطناعي والأتمتة الصناعية</title>
+  <meta name="description" content="البروفايل المهني للمهندس صافي طه: استشارات الذكاء الاصطناعي، الأتمتة الصناعية PLC/CNC، صيانة البوردات الدقيقة (Board-Level)، وسلسلة كتب الصافي." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg-dark: #070b14;
+      --bg-surface: #0b1120;
+      --bg-card: rgba(15, 23, 42, 0.68);
+      --bg-card-hover: rgba(15, 23, 42, 0.92);
+      --primary-cyan: #00d2ff;
+      --secondary-cyan: #00f0ff;
+      --cyan-glow: rgba(0, 210, 255, 0.35);
+      --cyan-border: rgba(0, 210, 255, 0.25);
+      --cyan-border-hover: rgba(0, 210, 255, 0.7);
+      --text-white: #ffffff;
+      --text-platinum: #e5e7eb;
+      --text-muted: #94a3b8;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --success: #10b981;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-platinum);
+      line-height: 1.65;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 210, 255, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(0, 240, 255, 0.06) 0%, transparent 45%),
+        linear-gradient(rgba(11, 17, 32, 0.94), rgba(7, 11, 20, 0.98));
+    }
+
+    a { text-decoration: none; color: inherit; transition: var(--transition); }
+    button { cursor: pointer; border: none; outline: none; transition: var(--transition); font-family: inherit; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 90px 0; position: relative; }
+
+    .section-header { text-align: center; margin-bottom: 50px; }
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 210, 255, 0.1);
+      color: var(--primary-cyan);
+      border: 1px solid var(--cyan-border);
+      padding: 6px 18px;
+      border-radius: var(--radius-full);
+      font-size: 13.5px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      backdrop-filter: blur(8px);
+    }
+    .section-title {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--text-white);
+      text-shadow: 0 0 20px rgba(0, 210, 255, 0.25);
+      margin-bottom: 10px;
+    }
+    .section-subtitle {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .glass-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--cyan-border);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .glass-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--cyan-border-hover);
+      box-shadow: 0 12px 32px rgba(0, 210, 255, 0.16);
+      transform: translateY(-5px);
+    }
+
+    .btn-glow {
+      background: linear-gradient(135deg, #00d2ff, #0088ff);
+      color: #050b17;
+      font-weight: 800;
+      padding: 11px 26px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14.5px;
+    }
+    .btn-glow:hover {
+      background: linear-gradient(135deg, #00f0ff, #00a2ff);
+      box-shadow: 0 0 28px rgba(0, 210, 255, 0.7);
+      transform: translateY(-2px);
+      color: #000;
+    }
+    .btn-outline-glow {
+      background: rgba(0, 210, 255, 0.08);
+      color: var(--primary-cyan);
+      border: 1px solid var(--primary-cyan);
+      font-weight: 700;
+      padding: 9px 22px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13.5px;
+    }
+    .btn-outline-glow:hover {
+      background: var(--primary-cyan);
+      color: #050b17;
+      box-shadow: 0 0 20px var(--cyan-glow);
+    }
+
+    /* Navigation */
+    .header-nav {
+      position: fixed; top: 0; left: 0; width: 100%; height: 80px;
+      z-index: 1000; background: rgba(11, 17, 32, 0.92);
+      backdrop-filter: blur(16px); border-bottom: 1px solid var(--cyan-border);
+    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .nav-brand { display: flex; align-items: center; gap: 12px; }
+    
+    /* SECRET TRIGGER: Triple Click Icon */
+    .nav-brand-logo {
+      width: 46px; height: 46px;
+      background: rgba(0, 210, 255, 0.12);
+      border: 1px solid var(--primary-cyan);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--primary-cyan);
+      box-shadow: 0 0 16px rgba(0, 210, 255, 0.25);
+      font-size: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .nav-brand-text h1 { font-size: 17px; font-weight: 900; color: #fff; line-height: 1.2; }
+    .nav-brand-text span { font-size: 11px; color: var(--primary-cyan); display: block; }
+    .nav-menu { display: flex; list-style: none; gap: 18px; }
+    .nav-menu a { font-size: 14px; font-weight: 600; color: var(--text-platinum); padding: 6px 0; }
+    .nav-menu a:hover, .nav-menu a.active { color: var(--primary-cyan); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .mobile-toggle { display: none; background: transparent; color: var(--primary-cyan); font-size: 24px; }
+
+    /* Hero */
+    #page-1 { padding-top: 130px; padding-bottom: 75px; text-align: center; }
+    .hero-headline { font-size: 48px; font-weight: 900; color: #fff; line-height: 1.25; margin-bottom: 16px; }
+    .hero-headline span {
+      background: linear-gradient(135deg, #ffffff 30%, var(--primary-cyan) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-subheadline { font-size: 19px; color: var(--text-platinum); max-width: 880px; margin: 0 auto 35px; line-height: 1.7; }
+
+    .hero-badge-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 1020px; margin: 0 auto 45px; }
+    .hero-badge {
+      background: rgba(15, 23, 42, 0.75); border: 1px solid var(--cyan-border);
+      padding: 7px 16px; border-radius: var(--radius-full); font-size: 13px; color: var(--text-platinum);
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .hero-badge i { color: var(--primary-cyan); }
+    .hero-badge b { color: #fff; font-weight: 800; }
+
+    .quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 60px; }
+    .quick-card { padding: 22px 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+    .quick-icon {
+      width: 52px; height: 52px; border-radius: var(--radius-sm);
+      background: rgba(0, 210, 255, 0.08); border: 1px solid var(--cyan-border);
+      display: flex; align-items: center; justify-content: center; color: var(--primary-cyan); font-size: 22px;
+    }
+    .quick-card:hover .quick-icon { transform: scale(1.1); box-shadow: 0 0 18px var(--primary-cyan); background: rgba(0, 210, 255, 0.2); }
+    .quick-title { font-size: 14.5px; font-weight: 700; color: #fff; }
+
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+      background: rgba(15, 23, 42, 0.75); border: 1px solid var(--cyan-border);
+      border-radius: var(--radius-lg); padding: 28px; backdrop-filter: blur(16px);
+    }
+    .stat-item { text-align: center; position: relative; }
+    .stat-item:not(:last-child)::after {
+      content: ''; position: absolute; left: 0; top: 15%; height: 70%; width: 1px; background: rgba(0, 210, 255, 0.2);
+    }
+    .stat-number { font-size: 42px; font-weight: 900; color: var(--primary-cyan); line-height: 1; margin-bottom: 5px; }
+    .stat-label { font-size: 16px; font-weight: 700; color: #fff; }
+    .stat-sub { font-size: 12.5px; color: var(--text-muted); }
+
+    /* About Section */
+    #page-2 { background: rgba(8, 14, 27, 0.75); }
+    .about-wrapper { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: start; }
+    .about-headline { font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 12px; }
+    .about-headline span { color: var(--primary-cyan); }
+    .about-desc { font-size: 15.5px; color: var(--text-platinum); line-height: 1.75; margin-bottom: 20px; }
+
+    .exp-timeline { position: relative; padding-right: 28px; margin: 20px 0; }
+    .exp-timeline::before {
+      content: ''; position: absolute; right: 8px; top: 5px; bottom: 5px; width: 2px;
+      background: linear-gradient(180deg, var(--primary-cyan), rgba(0, 210, 255, 0.15));
+    }
+    .timeline-entry { position: relative; margin-bottom: 20px; }
+    .timeline-marker {
+      position: absolute; right: -28px; top: 5px; width: 18px; height: 18px;
+      border-radius: 50%; background: #0b1120; border: 2px solid var(--primary-cyan);
+      box-shadow: 0 0 8px var(--primary-cyan);
+    }
+    .timeline-box { background: rgba(15, 23, 42, 0.6); border: 1px solid var(--cyan-border); border-radius: var(--radius-sm); padding: 14px 18px; }
+    .timeline-title-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+    .timeline-role { font-size: 15px; font-weight: 800; color: #fff; }
+    .timeline-period { font-size: 12px; color: var(--primary-cyan); font-weight: 700; }
+    .timeline-org { font-size: 13.5px; color: #38bdf8; margin-bottom: 6px; font-weight: 600; }
+    .timeline-details { font-size: 13px; color: var(--text-muted); list-style-type: disc; padding-right: 18px; }
+
+    .side-credentials-box {
+      background: rgba(15, 23, 42, 0.85); border: 1px solid var(--cyan-border);
+      border-radius: var(--radius-lg); padding: 26px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .side-credentials-box h4 {
+      font-size: 17px; color: #fff; font-weight: 800; border-bottom: 1px solid var(--cyan-border);
+      padding-bottom: 10px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+    }
+    .cred-item { display: flex; align-items: flex-start; gap: 10px; font-size: 13.5px; margin-bottom: 12px; color: var(--text-platinum); }
+    .cred-item i { color: #34d399; margin-top: 4px; }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .service-card { padding: 28px 22px; display: flex; flex-direction: column; }
+    .service-icon-wrap {
+      width: 56px; height: 56px; border-radius: var(--radius-sm);
+      background: rgba(0, 210, 255, 0.1); border: 1px solid var(--primary-cyan);
+      display: flex; align-items: center; justify-content: center; color: var(--primary-cyan);
+      font-size: 22px; margin-bottom: 16px;
+    }
+    .service-title { font-size: 18.5px; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .service-desc { font-size: 14px; color: var(--text-platinum); line-height: 1.65; flex-grow: 1; margin-bottom: 16px; }
+
+    /* Books */
+    #page-4 { background: rgba(9, 15, 29, 0.65); }
+    .books-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+    .book-card { padding: 22px; display: flex; gap: 20px; align-items: center; }
+    .book-3d-mockup {
+      width: 125px; height: 170px; min-width: 125px; border-radius: 4px 10px 10px 4px;
+      background: linear-gradient(135deg, #0f1e36, #061122); border: 1px solid var(--primary-cyan);
+      box-shadow: -6px 8px 20px rgba(0, 0, 0, 0.6); position: relative; display: flex;
+      flex-direction: column; justify-content: space-between; padding: 12px 10px; overflow: hidden;
+    }
+    .book-3d-mockup img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+    .book-3d-spine { position: absolute; right: 0; top: 0; bottom: 0; width: 5px; background: var(--primary-cyan); }
+    .book-chip { font-size: 9px; color: var(--primary-cyan); font-weight: 800; }
+    .book-3d-title { font-size: 11.5px; font-weight: 800; color: #fff; line-height: 1.3; }
+    .book-info { display: flex; flex-direction: column; gap: 6px; flex-grow: 1; }
+    .book-badge {
+      display: inline-block; align-self: flex-start; font-size: 10.5px;
+      background: rgba(0, 210, 255, 0.12); color: var(--primary-cyan);
+      padding: 2px 8px; border-radius: var(--radius-full); font-weight: 700;
+    }
+    .book-name { font-size: 17.5px; font-weight: 800; color: var(--text-white); }
+    .book-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; }
+    .book-meta { display: flex; gap: 12px; font-size: 11.5px; color: var(--text-platinum); }
+    .book-actions { display: flex; gap: 8px; margin-top: 6px; }
+
+    /* Stories */
+    .stories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+    .story-card { display: flex; flex-direction: column; padding: 24px; }
+    .story-header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .story-avatar {
+      width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+      border: 2px solid var(--primary-cyan); background: #0d1527; flex-shrink: 0;
+    }
+    .story-name { font-size: 16.5px; font-weight: 800; color: #fff; }
+    .story-track { font-size: 12px; color: var(--primary-cyan); font-weight: 600; }
+    .story-body {
+      font-size: 14px; color: var(--text-platinum); line-height: 1.65;
+      margin-bottom: 14px; flex-grow: 1; padding-right: 12px;
+      border-right: 2px solid rgba(0, 210, 255, 0.35);
+    }
+    .story-achievement-tag {
+      align-self: flex-start; font-size: 11.5px;
+      background: rgba(16, 185, 129, 0.15); color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3); padding: 4px 12px; border-radius: var(--radius-full); font-weight: 700;
+    }
+
+    /* Gallery */
+    #page-achievements { background: rgba(7, 12, 22, 0.9); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+    .gallery-card { overflow: hidden; border-radius: var(--radius-md); }
+    .gallery-img-box { width: 100%; height: 210px; background: #0b1528; overflow: hidden; }
+    .gallery-img-box img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+    .gallery-info { padding: 14px 18px; background: rgba(11, 17, 32, 0.95); border-top: 1px solid var(--cyan-border); }
+    .gallery-info h4 { font-size: 14.5px; font-weight: 800; color: #fff; }
+    .gallery-info span { font-size: 11.5px; color: var(--primary-cyan); }
+
+    /* Courses */
+    .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .course-card { padding: 26px 20px; display: flex; flex-direction: column; }
+    .course-top-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .course-num {
+      font-size: 13px; font-weight: 900; color: var(--primary-cyan);
+      background: rgba(0, 210, 255, 0.1); border: 1px solid var(--cyan-border);
+      width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center;
+    }
+    .course-duration {
+      font-size: 12px; font-weight: 700; color: #fff; background: rgba(255, 255, 255, 0.08);
+      padding: 3px 10px; border-radius: var(--radius-full);
+    }
+    .course-title { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .course-features { list-style: none; margin: 10px 0 18px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+    .course-features li { font-size: 13px; color: var(--text-platinum); display: flex; align-items: center; gap: 8px; }
+    .course-features li i { color: var(--primary-cyan); font-size: 11px; }
+
+    /* Contact */
+    #page-8 { background: rgba(6, 10, 20, 0.85); }
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    .contact-card { padding: 26px; }
+    .contact-card-title { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 12.5px; font-weight: 700; color: var(--text-platinum); margin-bottom: 5px; }
+    .form-control {
+      width: 100%; background: rgba(11, 17, 32, 0.7); border: 1px solid var(--cyan-border);
+      border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 13.5px; transition: var(--transition);
+    }
+    .form-control:focus { border-color: var(--primary-cyan); box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); outline: none; }
+    textarea.form-control { resize: vertical; min-height: 80px; }
+    .direct-list { display: flex; flex-direction: column; gap: 16px; }
+    .direct-item { display: flex; align-items: flex-start; gap: 12px; }
+    .direct-icon {
+      width: 38px; height: 38px; border-radius: var(--radius-sm);
+      background: rgba(0, 210, 255, 0.08); border: 1px solid var(--cyan-border);
+      display: flex; align-items: center; justify-content: center; color: var(--primary-cyan); flex-shrink: 0; font-size: 16px;
+    }
+    .btn-whatsapp-direct {
+      background: #25d366; color: #fff; padding: 11px;
+      border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center;
+      gap: 8px; font-weight: 800; font-size: 14px;
+    }
+
+    /* Footer */
+    footer { background: #050810; border-top: 1px solid var(--cyan-border); padding: 60px 0 25px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.2fr; gap: 35px; margin-bottom: 40px; }
+    .footer-brand h2 { font-size: 19px; font-weight: 900; color: #fff; margin-bottom: 10px; }
+    .footer-brand p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+    .footer-title { font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 16px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a { font-size: 13.5px; color: var(--text-muted); }
+    .footer-links a:hover { color: var(--primary-cyan); padding-right: 4px; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 20px;
+      display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: var(--text-muted);
+    }
+
+    /* Floating */
+    .fab-whatsapp {
+      position: fixed; bottom: 24px; right: 24px; width: 52px; height: 52px;
+      background: #25d366; color: #fff; border-radius: 50%; display: flex;
+      align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4); z-index: 990;
+      font-size: 26px;
+    }
+    .fab-back-to-top {
+      position: fixed; bottom: 24px; left: 24px; width: 46px; height: 46px;
+      background: rgba(11, 17, 32, 0.85); border: 1px solid var(--primary-cyan);
+      color: var(--primary-cyan); border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; box-shadow: 0 0 12px rgba(0, 210, 255, 0.3);
+      opacity: 0; visibility: hidden; transition: var(--transition); z-index: 990;
+    }
+    .fab-back-to-top.show { opacity: 1; visibility: visible; }
+
+    /* AI CHATBOT WIDGET */
+    .chat-trigger-btn {
+      position: fixed; bottom: 82px; left: 24px; width: 48px; height: 48px;
+      background: linear-gradient(135deg, #00d2ff, #0077ff); color: #050b17;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.5); z-index: 995; font-size: 22px;
+      cursor: pointer; transition: var(--transition);
+    }
+    .chat-trigger-btn:hover { transform: scale(1.1) rotate(5deg); box-shadow: 0 0 28px rgba(0, 210, 255, 0.8); }
+
+    .chat-widget-box {
+      position: fixed; bottom: 90px; left: 24px; width: 380px; max-width: calc(100vw - 48px);
+      height: 520px; max-height: calc(100vh - 120px);
+      background: rgba(11, 17, 32, 0.96); backdrop-filter: blur(20px);
+      border: 1px solid var(--primary-cyan); border-radius: var(--radius-md);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 210, 255, 0.25);
+      z-index: 1500; display: none; flex-direction: column; overflow: hidden;
+      animation: chatSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .chat-widget-box.active { display: flex; }
+
+    @keyframes chatSlideIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .chat-header {
+      background: rgba(15, 23, 42, 0.95); border-bottom: 1px solid var(--cyan-border);
+      padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .chat-header-user { display: flex; align-items: center; gap: 10px; }
+    .chat-header-avatar {
+      width: 38px; height: 38px; border-radius: 50%; background: rgba(0, 210, 255, 0.15);
+      border: 1.5px solid var(--primary-cyan); display: flex; align-items: center; justify-content: center;
+      color: var(--primary-cyan); font-size: 16px;
+    }
+    .chat-header-info h4 { font-size: 14.5px; font-weight: 800; color: #fff; line-height: 1.2; }
+    .chat-header-info span { font-size: 11px; color: #34d399; display: flex; align-items: center; gap: 4px; }
+    .chat-header-info span::before { content: ''; width: 6px; height: 6px; background: #34d399; border-radius: 50%; }
+
+    .chat-body {
+      flex-grow: 1; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px;
+      font-size: 13.5px;
+    }
+    .chat-bubble {
+      max-width: 85%; padding: 10px 14px; border-radius: 12px; line-height: 1.5; word-wrap: break-word;
+    }
+    .chat-bubble.bot {
+      background: rgba(15, 23, 42, 0.9); border: 1px solid var(--cyan-border);
+      color: var(--text-platinum); align-self: flex-start; border-bottom-right-radius: 2px;
+    }
+    .chat-bubble.user {
+      background: linear-gradient(135deg, #0088ff, #00d2ff); color: #050b17;
+      font-weight: 600; align-self: flex-end; border-bottom-left-radius: 2px;
+    }
+
+    .chat-chips-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .chat-chip {
+      background: rgba(0, 210, 255, 0.1); border: 1px solid var(--cyan-border);
+      color: var(--primary-cyan); padding: 4px 10px; border-radius: var(--radius-full);
+      font-size: 11.5px; font-weight: 700; cursor: pointer; transition: var(--transition);
+    }
+    .chat-chip:hover { background: var(--primary-cyan); color: #050b17; }
+
+    .chat-footer {
+      padding: 12px; background: rgba(15, 23, 42, 0.95); border-top: 1px solid var(--cyan-border);
+      display: flex; gap: 8px; align-items: center;
+    }
+    .chat-input {
+      flex-grow: 1; background: rgba(7, 11, 20, 0.8); border: 1px solid var(--cyan-border);
+      border-radius: 20px; padding: 8px 14px; color: #fff; font-size: 13px; outline: none;
+    }
+    .chat-input:focus { border-color: var(--primary-cyan); }
+    .chat-send-btn {
+      width: 36px; height: 36px; border-radius: 50%; background: var(--primary-cyan);
+      color: #050b17; display: flex; align-items: center; justify-content: center; font-size: 14px;
+    }
+
+    /* Secret Admin Styles */
+    .admin-modal-backdrop {
+      position: fixed; inset: 0; background: rgba(5, 10, 20, 0.88);
+      backdrop-filter: blur(12px); z-index: 2000; display: none;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .admin-modal-backdrop.active { display: flex; }
+    .secret-box {
+      width: 100%; max-width: 380px; background: rgba(15, 23, 42, 0.98);
+      border: 1px solid var(--primary-cyan); border-radius: var(--radius-md);
+      padding: 30px 24px; text-align: center; position: relative;
+    }
+    .close-btn { position: absolute; top: 14px; left: 14px; background: transparent; color: var(--text-muted); font-size: 18px; }
+
+    .admin-overlay {
+      position: fixed; inset: 0; background: #070b14; z-index: 2500;
+      display: none; flex-direction: column; overflow-y: auto;
+    }
+    .admin-overlay.active { display: flex; }
+    .admin-bar {
+      height: 70px; background: #0b1120; border-bottom: 1px solid var(--cyan-border);
+      padding: 0 25px; display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .admin-tabs { display: flex; gap: 10px; margin-bottom: 24px; border-bottom: 1px solid var(--cyan-border); padding-bottom: 10px; overflow-x: auto; }
+    .tab-btn {
+      background: rgba(15, 23, 42, 0.8); border: 1px solid var(--cyan-border);
+      color: var(--text-platinum); padding: 8px 18px; border-radius: 6px; font-weight: 700; font-size: 13.5px; white-space: nowrap;
+    }
+    .tab-btn.active { background: var(--primary-cyan); color: #050b17; }
+    .upload-zone {
+      border: 2px dashed var(--cyan-border); border-radius: 12px;
+      padding: 22px; text-align: center; background: rgba(15, 23, 42, 0.4);
+      cursor: pointer; margin-bottom: 14px; position: relative;
+    }
+    .upload-zone input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+    .upload-preview { max-height: 120px; border-radius: 8px; margin-top: 10px; display: none; object-fit: contain; }
+    .admin-items-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 16px; }
+    .admin-item-card { background: rgba(15, 23, 42, 0.85); border: 1px solid var(--cyan-border); border-radius: 8px; padding: 14px; }
+    .admin-btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+    .admin-edit-btn { background: rgba(0, 210, 255, 0.15); border: 1px solid var(--primary-cyan); color: var(--primary-cyan); padding: 6px; border-radius: 6px; font-weight: 700; font-size: 12px; }
+    .admin-del-btn { background: rgba(239, 68, 68, 0.15); border: 1px solid var(--danger); color: var(--danger); padding: 6px; border-radius: 6px; font-weight: 700; font-size: 12px; }
+
+    .edit-mode-indicator {
+      display: none; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--warning);
+      color: var(--warning); padding: 8px 14px; border-radius: 6px; font-size: 13px; font-weight: 700;
+      margin-bottom: 12px; align-items: center; justify-content: space-between;
+    }
+
+    @media (max-width: 1024px) {
+      .quick-grid, .services-grid, .courses-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-wrapper, .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .header-nav { height: 70px; }
+      .nav-menu {
+        position: fixed; top: 70px; right: -100%; width: 80%; height: calc(100vh - 70px);
+        background: rgba(11, 17, 32, 0.98); border-left: 1px solid var(--cyan-border);
+        flex-direction: column; padding: 30px 20px; gap: 16px; transition: var(--transition);
+      }
+      .nav-menu.open { right: 0; }
+      .mobile-toggle { display: block; }
+      .hero-headline { font-size: 32px; }
+      .stats-bar, .quick-grid, .books-grid, .services-grid, .courses-grid, .stories-grid, .gallery-grid, .footer-grid { grid-template-columns: 1fr; }
+      .book-card { flex-direction: column; text-align: center; }
+      .footer-bottom { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <div class="nav-brand-logo" id="secretLogoTrigger" title="م. صافي طه">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="nav-brand-text">
+          <h1>م. صافي طه | Safi Taha</h1>
+          <span>استشاري وخبير هندسي وتقني</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#page-1" class="active">الرئيسية</a></li>
+          <li><a href="#page-2">المسيرة والخبرات</a></li>
+          <li><a href="#page-3">الكفاءات والاستشارات</a></li>
+          <li><a href="#page-4">المؤلفات والكتب</a></li>
+          <li><a href="#page-stories">قصص النجاح</a></li>
+          <li><a href="#page-achievements">معرض الإنجازات</a></li>
+          <li><a href="#page-5">البرامج التدريبية</a></li>
+          <li><a href="https://alsafi.my.canva.site/dagbh5vtunw" target="_blank" rel="noopener">الشركاء</a></li>
+          <li><a href="https://alsafi.my.canva.site/zakertna" target="_blank" rel="noopener">الأرشيف</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/962785181866" target="_blank" class="btn-glow">
+          <i class="fab fa-whatsapp"></i>
+          <span>تواصل مباشر</span>
+        </a>
+        
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="قائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="page-1">
+    <div class="container">
+      <div class="section-tag">
+        <i class="fas fa-award"></i>
+        <span>EXECUTIVE TECHNICAL CONSULTANT & AI / AUTOMATION EXPERT</span>
+      </div>
+
+      <h1 class="hero-headline">
+        م. صافي طه<br />
+        <span>مستشار تقني وتنفيذي · خبير الذكاء الاصطناعي والأتمتة الصناعية</span>
+      </h1>
+
+      <p class="hero-subheadline">
+        مسيرة مهنية تمتد لأكثر من 25 عاماً في قيادة الحلول الهندسية المتقدمة، صيانة اللوحات الإلكترونية المعقدة (Board-Level)، تصميم وبرمجة نظم التحكم الصناعي (PLC/SCADA/CNC)، وتأهيل الكوادر الهندسية لكبرى المؤسسات الحكومية والأمنية والجامعية.
+      </p>
+
+      <div class="hero-badge-strip">
+        <div class="hero-badge"><i class="fas fa-history"></i> خبرة موثقة <b>+25 عاماً</b></div>
+        <div class="hero-badge"><i class="fas fa-brain"></i> استشارات وحلول <b>الذكاء الاصطناعي (AI)</b></div>
+        <div class="hero-badge"><i class="fas fa-robot"></i> أتمتة صناعية <b>PLC · CNC · SCADA</b></div>
+        <div class="hero-badge"><i class="fas fa-microchip"></i> صيانة دقيقة <b>مستوى المكون (Board-Level)</b></div>
+        <div class="hero-badge"><i class="fas fa-chalkboard-teacher"></i> تدريب هندسي <b>(TOT) وتأهيل مدربين</b></div>
+        <div class="hero-badge"><i class="fas fa-shield-alt"></i> أدلة جنائية رقمية <b>واسترجاع بيانات</b></div>
+      </div>
+
+      <div class="quick-grid">
+        <a href="#page-3" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-robot"></i></div>
+          <span class="quick-title">حلول AI والأتمتة</span>
+        </a>
+        <a href="#page-3" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-microchip"></i></div>
+          <span class="quick-title">صيانة البوردات والمايكرو</span>
+        </a>
+        <a href="#page-5" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span class="quick-title">البرامج التدريبية المعتمدة</span>
+        </a>
+        <a href="#page-4" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-book"></i></div>
+          <span class="quick-title">المؤلفات وسلسلة الكتب</span>
+        </a>
+        <a href="#page-stories" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-user-graduate"></i></div>
+          <span class="quick-title">قصص نجاح الكوادر</span>
+        </a>
+        <a href="#page-achievements" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-certificate"></i></div>
+          <span class="quick-title">الشهادات والاعتمادات</span>
+        </a>
+        <a href="https://www.stfixit.io" target="_blank" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-globe"></i></div>
+          <span class="quick-title">منصة STFIXIT.IO</span>
+        </a>
+        <a href="#page-8" class="glass-card quick-card">
+          <div class="quick-icon"><i class="fas fa-headset"></i></div>
+          <span class="quick-title">الاستشارات الفنية</span>
+        </a>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">عاماً من الخبرة</div>
+          <div class="stat-sub">في الهندسة والصيانة والتدريب الميداني</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15K+</div>
+          <div class="stat-label">فني وخريج مؤهل</div>
+          <div class="stat-sub">محلياً وإقليمياً في كبرى القطاعات</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">60+</div>
+          <div class="stat-label">برنامج تدريبي معتمد</div>
+          <div class="stat-sub">TOT، جامعات، ومؤسسات أمنية</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">اعتماد مهني موثق</div>
+          <div class="stat-sub">وزارة العمل وهيئة تنمية المهارات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-2">
+    <div class="container">
+      <div class="about-wrapper">
+        <div>
+          <div class="section-tag"><span>المسيرة المهنية والاستشارية</span></div>
+          <h2 class="about-headline">المستشار التقني والتنفيذي <span>م. صافي طه</span></h2>
+          <p class="about-desc">
+            خبير واستشاري تنفيذي معتمد، يمتلك سجلاً رائداً في تصميم وتطوير حلول الأتمتة الصناعية، توظيف أدوات الذكاء الاصطناعي لتحسين خطوط الإنتاج والتشغيل، والإشراف على البرامج التدريبية المتقدمة وتأهيل الكوادر الفنية والأكاديمية.
+          </p>
+
+          <div class="exp-timeline">
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مدرب تقني معتمد ومطور مناهج</span>
+                  <span class="timeline-period">2025 - 2026</span>
+                </div>
+                <div class="timeline-org">أمانة عمّان الكبرى - مشاغل التدريب المهني (حدائق الملكة رانيا العبدالله)</div>
+                <ul class="timeline-details">
+                  <li>تدريس برامج متخصصة في الذكاء الاصطناعي، البرمجة وتصميم المواقع، وهندسة الصيانة الإلكترونية المتقدمة.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مدرب تقني أول ومستشار برامج</span>
+                  <span class="timeline-period">2016 - 2025</span>
+                </div>
+                <div class="timeline-org">أكاديمية ستوب أند جو (Stop and Go Academy) - عمّان</div>
+                <ul class="timeline-details">
+                  <li>الإشراف على برامج صيانة الأجهزة الذكية والإلكترونيات، وتوجيه وتأهيل المدربين واعتماد معايير التدريب المهني وتخريج آلاف الفنيين.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مدرب تقني أول ومستشار برامج تأهيلية</span>
+                  <span class="timeline-period">2022 - 2024</span>
+                </div>
+                <div class="timeline-org">كلية لومينوس الجامعية التقنية (LTUC) - عمّان</div>
+                <ul class="timeline-details">
+                  <li>تقديم دورات تطوير المدربين (TOT)، وتدريب 25 معلماً ومدرباً مهنياً، وتنفيذ برنامج تدريب مدربي اليمن على صيانة أنظمة PLC والطاقة وتأهيل 500+ متدرب.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مدرب ومستشار تقني - الأدلة الجنائية واسترجاع البيانات</span>
+                  <span class="timeline-period">2022</span>
+                </div>
+                <div class="timeline-org">مديرية الأمن العام - إدارة الأدلة الجنائية وحماية الأسرة</div>
+                <ul class="timeline-details">
+                  <li>تنفيذ برنامج تدريبي عملي عالي التخصص (60 ساعة) لنخبة مختبر الأدلة الجنائية في استخلاص البيانات من الذواكر والدوائر المتضررة.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مدرب تقني</span>
+                  <span class="timeline-period">2022</span>
+                </div>
+                <div class="timeline-org">مركز الاستشارات والتدريب - الجامعة الأردنية</div>
+                <ul class="timeline-details">
+                  <li>تقديم ورش تدريبية تخصصية متقدمة في هندسة صيانة الأجهزة وفق المعايير الأكاديمية والمهنية الصارمة.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">مؤسس ومدير عام (ترقية من فني صيانة أول)</span>
+                  <span class="timeline-period">2007 - 2014</span>
+                </div>
+                <div class="timeline-org">شركة الصافي للكمبيوتر والخلويات - عمّان</div>
+                <ul class="timeline-details">
+                  <li>إدارة العمليات التشغيلية، والدعم الفني الهندسي المتقدم، وحل أعطال اللوحات الأم المعقدة وبناء شبكة شراكات محلية واسعة.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-box">
+                <div class="timeline-title-row">
+                  <span class="timeline-role">فني إلكترونيات وأنظمة حاسوبية أول</span>
+                  <span class="timeline-period">2000 - 2007</span>
+                </div>
+                <div class="timeline-org">شركة الشلال للكمبيوتر - عمّان</div>
+                <ul class="timeline-details">
+                  <li>التشخيص واستكشاف أعطال الدوائر الإلكترونية واللوحات الرئيسية ومزودات القدرة.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-credentials-box">
+          <h4><i class="fas fa-stamp"></i> الاعتمادات والمؤهلات المهنية</h4>
+          <div class="cred-item">
+            <i class="fas fa-check-circle"></i>
+            <div><strong>شهادة الدراسة الثانوية العامة الصناعية:</strong> تخصص إلكترونيات (2000-2002) - مؤسسة التدريب المهني، المدرسة الصناعية في سحاب.</div>
+          </div>
+          <div class="cred-item">
+            <i class="fas fa-check-circle"></i>
+            <div><strong>اعتماد رسمي:</strong> هيئة تنمية وتطوير المهارات التقنية والمهنية ووزارة العمل - الأردن.</div>
+          </div>
+          <div class="cred-item">
+            <i class="fas fa-check-circle"></i>
+            <div><strong>TOT:</strong> تدريب المدربين المتقدمة - شركة كادر لتكنولوجيا التعليم للتنمية والتدريب.</div>
+          </div>
+          <div class="cred-item">
+            <i class="fas fa-check-circle"></i>
+            <div><strong>المهارات الأساسية (Core Skills):</strong> منظمة العمل الدولية (ILO) وكلية لومينوس التقنية.</div>
+          </div>
+          <div class="cred-item">
+            <i class="fas fa-check-circle"></i>
+            <div><strong>المدرب المحترف المعتمد:</strong> أكاديمية ستوب أند جو لتعليم صيانة الإلكترونيات.</div>
+          </div>
+
+          <div style="margin-top: 20px; padding: 14px; background: rgba(0, 210, 255, 0.08); border-radius: var(--radius-sm); border: 1px dashed var(--cyan-border);">
+            <div style="font-size: 12.5px; color: #fff; margin-bottom: 8px;">
+              <i class="fas fa-photo-video" style="color:var(--primary-cyan); margin-left:6px;"></i>
+              معرض الوثائق، الشهادات الرسمية، والمشاركات الميدانية الموثقة:
+            </div>
+            <a href="https://alsafi.my.canva.site/zakertna" target="_blank" class="btn-glow" style="padding: 6px 14px; font-size: 12px; width: 100%;">
+              <span>فتح معرض التوثيق والأرشيف</span>
+              <i class="fas fa-external-link-alt" style="font-size: 10px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-3">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><span>الكفاءات والخبرات الاستشارية</span></div>
+        <h2 class="section-title">مجالات الاستشارات والخدمات الفنية</h2>
+        <p class="section-subtitle">حلول متكاملة تجمع بين هاردوير اللوحات الدقيقة وحلول الأتمتة المتقدمة وتطبيقات الذكاء الاصطناعي</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-brain"></i></div>
+          <h3 class="service-title">الذكاء الاصطناعي وتطوير النظم</h3>
+          <p class="service-desc">دمج نماذج وأدوات الذكاء الاصطناعي في بيئات العمل، وتطوير المساعدات الذكية، وأتمتة المهام المعقدة، والتحليل التنبؤي للبيانات وصيانة المعدات.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-robot"></i></div>
+          <h3 class="service-title">الأتمتة الصناعية وPLC / SCADA</h3>
+          <p class="service-desc">تصميم وتكامل أنظمة التحكم، وبرمجة لوحات PLC، وضبط منظومات SCADA وشاشات HMI، وإعادة تأهيل وتحديث خطوط الإنتاج والماكينات الذكية للمصانع.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-cogs"></i></div>
+          <h3 class="service-title">تشغيل وبرمجة آلات CNC</h3>
+          <p class="service-desc">معايرة وبرمجة ماكينات التحكم الرقمي، ضبط محركات السيرفو والخطوية (Stepper/Servo)، مغيرات السرعة والتردد (VFD)، وصيانة كروت التحكم والكنترول.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-microchip"></i></div>
+          <h3 class="service-title">الصيانة الدقيقة (Board-Level)</h3>
+          <p class="service-desc">تشخيص وإصلاح البوردات المعقدة على مستوى المكون تحت الميكروسكوب، شبلنة BGA، علاج المسارات المقطوعة، وصيانة إنفرترات الطاقة الشمسية الهجينة.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="service-title">الأدلة الجنائية واسترجاع البيانات</h3>
+          <p class="service-desc">استخلاص البيانات المتقدم من الذواكر والأجهزة المتضررة والمحترقة (Chip-off Data Recovery)، وإجراء الفحوص الجنائية الرقمية بأعلى معايير الدقة والأمان.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+        <div class="glass-card service-card">
+          <div class="service-icon-wrap"><i class="fas fa-code"></i></div>
+          <h3 class="service-title">البرمجيات والأنظمة المدمجة (IoT)</h3>
+          <p class="service-desc">برمجة المتحكمات الدقيقة Arduino وESP32، بناء منصات الويب التفاعلية، وتطوير حلول إنترنت الأشياء لربط المستشعرات الصناعية والميدانية بالسحابة.</p>
+          <a href="#page-8" class="btn-outline-glow">طلب استشارة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-4">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><span>المؤلفات الهندسية الرسمية</span></div>
+        <h2 class="section-title">سلسلة كتب ومؤلفات م. صافي طه</h2>
+        <p class="section-subtitle">سلسلة كتب "الصافي في صيانة الأجهزة الذكية والإلكترونيات" - مراجع هندسية معتمدة وموثقة</p>
+      </div>
+      <div class="books-grid" id="booksDisplayContainer"></div>
+    </div>
+  </section>
+
+  <section id="page-stories">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-user-graduate"></i> قصص ملهمة ونماذج فخر</div>
+        <h2 class="section-title">قصص نجاح الكوادر والمتدربين</h2>
+        <p class="section-subtitle">نماذج حقيقية لكوادر وفنيين تم تدريبهم وتأهيلهم لسوق العمل وتأسيس مشاريعهم الخاصة</p>
+      </div>
+      <div class="stories-grid" id="storiesContainer"></div>
+    </div>
+  </section>
+
+  <section id="page-achievements">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><span>سجل الفخر والاعتمادات</span></div>
+        <h2 class="section-title">معرض التوثيق والشهادات المعتمدة</h2>
+        <p class="section-subtitle">نماذج من شهادات التكريم، الورش التدريبية، والفعاليات الميدانية الرسمية</p>
+      </div>
+      <div class="gallery-grid" id="achievementsDisplayContainer"></div>
+    </div>
+  </section>
+
+  <section id="page-5">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><span>التأهيل المهني والهندسي</span></div>
+        <h2 class="section-title">الحقائب والبرامج التدريبية المعتمدة</h2>
+        <p class="section-subtitle">برامج عملية تطبيقية مباشرة تحت إشراف م. صافي طه لنقل المتدربين والمهندسين لسوق العمل المتقدم</p>
+      </div>
+
+      <div class="courses-grid">
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">01</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> 3 أشهر</span>
+          </div>
+          <h3 class="course-title">دبلوم صيانة الهواتف والمايكروسولديرنج</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> تشخيص الأعطال بالخرائط التفاعلية Schematics</li>
+            <li><i class="fas fa-check"></i> تقنيات اللحام الدقيق وشبلنة رقاقات BGA</li>
+            <li><i class="fas fa-check"></i> حلول السوفت وير والبوكسات المتقدمة</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دبلوم%20صيانة%20الهواتف" target="_blank" class="btn-glow" style="width: 100%;">سجل واستفسر الآن ($350)</a>
+          </div>
+        </div>
+
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">02</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> شهر واحد</span>
+          </div>
+          <h3 class="course-title">دورة اللحام الدقيق المتقدمة (Micro-Soldering)</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> فك وتركيب وشبلنة رقاقات الـ CPU والذاكرة</li>
+            <li><i class="fas fa-check"></i> تعويض المسارات والجمبر المجهري تحت الميكروسكوب</li>
+            <li><i class="fas fa-check"></i> صيانة بوردات الآيفون المزدوجة (Sandwich)</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دورة%20المايكروسولديرنج" target="_blank" class="btn-glow" style="width: 100%;">سجل واستفسر الآن ($250)</a>
+          </div>
+        </div>
+
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">03</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> شهرين</span>
+          </div>
+          <h3 class="course-title">برمجة أنظمة التحكم الصناعي PLC & SCADA</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> البرمجة القياسية للـ PLC والمخططات السلمية</li>
+            <li><i class="fas fa-check"></i> ربط شاشات HMI ومنظومات SCADA الرقابية</li>
+            <li><i class="fas fa-check"></i> صيانة كروت الدخل والخرج وحساسات المصانع</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دورة%20PLC" target="_blank" class="btn-glow" style="width: 100%;">سجل واستفسر الآن ($300)</a>
+          </div>
+        </div>
+
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">04</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> 6 أسابيع</span>
+          </div>
+          <h3 class="course-title">تشغيل، صيانة، وبرمجة ماكينات CNC</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> إعداد أكواد G-Code وM-Code والمعايرة الدقيقة</li>
+            <li><i class="fas fa-check"></i> فحص محركات السيرفو والإنفرترات ومحاور الحركة</li>
+            <li><i class="fas fa-check"></i> استكشاف أعطال الكنترول والدوائر الكهربائية</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دورة%20CNC" target="_blank" class="btn-glow" style="width: 100%;">سجل واستفسر الآن ($250)</a>
+          </div>
+        </div>
+
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">05</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> شهر واحد</span>
+          </div>
+          <h3 class="course-title">صيانة إنفرترات الطاقة الشمسية الهجينة</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> تشخيص مراحل الـ DC-DC وقنطرة الإنفرتر Bridge</li>
+            <li><i class="fas fa-check"></i> استبدال واختبار ترانزستورات IGBT وMOSFET</li>
+            <li><i class="fas fa-check"></i> قراءة إشارات كروت التحكم وتتبع كودات الأخطاء</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دورة%20الإنفرترات" target="_blank" class="btn-glow" style="width: 100%;">سجل واستفسر الآن ($200)</a>
+          </div>
+        </div>
+
+        <div class="glass-card course-card">
+          <div class="course-top-meta">
+            <span class="course-num">06</span>
+            <span class="course-duration"><i class="fas fa-clock"></i> شهرين</span>
+          </div>
+          <h3 class="course-title">دورة تأهيل وتدريب المدربين التقنيين (TOT)</h3>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> أساليب التعليم والتدريب التفاعلي المعملي</li>
+            <li><i class="fas fa-check"></i> إعداد وتطوير الحقائب التدريبية والمناهج</li>
+            <li><i class="fas fa-check"></i> رخصة تدريب معتمدة لسوق العمل والمراكز</li>
+          </ul>
+          <div class="course-footer">
+            <a href="https://wa.me/962785181866?text=استفسار%20عن%20دورة%20TOT" target="_blank" class="btn-glow" style="width: 100%;">استفسر عن السعر والحجز</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-8">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><span>مركز التواصل المباشر</span></div>
+        <h2 class="section-title">تواصل مباشرة مع م. صافي طه</h2>
+        <p class="section-subtitle">لطلب الاستشارات الهندسية للمصانع، التسجيل بالبرامج التدريبية، أو طلب سلسلة الكتب</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-paper-plane"></i> نموذج الاستفسار السريع</h3>
+          <form onsubmit="event.preventDefault(); alert('شكراً لتواصلك يا فندم! تم استلام رسالتك وسيتواصل معك المهندس صافي طه مباشرة.'); this.reset();">
+            <div class="form-group">
+              <label>الاسم الكريم</label>
+              <input type="text" class="form-control" placeholder="أدخل اسمك الكريم" required />
+            </div>
+            <div class="form-group">
+              <label>البريد الإلكتروني</label>
+              <input type="email" class="form-control" placeholder="name@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>رقم الهاتف / واتساب</label>
+              <input type="tel" class="form-control" placeholder="07XXXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label>تفاصيل الاستشارة أو الطلب</label>
+              <textarea class="form-control" placeholder="اذكر الخدمة أو الاستشارة أو الدورة المطلوبة..." required></textarea>
+            </div>
+            <button type="submit" class="btn-glow" style="width: 100%;">إرسال الاستفسار</button>
+          </form>
+        </div>
+
+        <div class="glass-card contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-address-book"></i> قنوات الاتصال المباشر</h3>
+          <div class="direct-list">
+            <a href="https://wa.me/962785181866" target="_blank" class="btn-whatsapp-direct">
+              <i class="fab fa-whatsapp"></i>
+              <span>واتساب مباشر: 0785181866</span>
+            </a>
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <div class="direct-info-title">الاتصال الهاتفي</div>
+                <div class="direct-info-val" dir="ltr"><a href="tel:+962785181866" style="color:var(--primary-cyan);">+962 78 518 1866</a></div>
+              </div>
+            </div>
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="direct-info-title">البريد الإلكتروني الرسمي</div>
+                <div class="direct-info-val"><a href="mailto:safitaha1984@gmail.com" style="color:#fff;">safitaha1984@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="direct-item">
+              <div class="direct-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <div class="direct-info-title">الموقع والمنصة الرسمية</div>
+                <div class="direct-info-val"><a href="https://www.stfixit.io" target="_blank" style="color:#38bdf8;">www.stfixit.io</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card contact-card">
+          <h3 class="contact-card-title"><i class="fas fa-map-marker-alt"></i> المقر والعنوان</h3>
+          <div class="direct-item" style="margin-bottom: 12px;">
+            <div class="direct-icon"><i class="fas fa-location-arrow"></i></div>
+            <div>
+              <div class="direct-info-title">المملكة الأردنية الهاشمية</div>
+              <div class="direct-info-val">عمّان - شارع سعيد الأندلسي / شارع الجامعة</div>
+            </div>
+          </div>
+          <div style="background: rgba(15,23,42,0.6); padding: 14px; border-radius: var(--radius-sm); border: 1px dashed var(--cyan-border); margin-bottom: 14px;">
+            <div style="font-size: 13px; color: #fff; font-weight: 700; margin-bottom: 4px;">أوقات العمل والمواعيد:</div>
+            <div style="font-size: 12.5px; color: var(--text-muted);">السبت - الخميس: 9:00 صباحاً - 6:00 مساءً</div>
+          </div>
+          <a href="https://wa.me/962785181866" target="_blank" class="btn-outline-glow" style="width: 100%;">
+            <i class="fab fa-whatsapp"></i>
+            <span>تنسيق موعد استشارة خاصة</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>م. صافي طه | Eng. Safi Taha</h2>
+          <p>مستشار تقني وتنفيذي، خبير الذكاء الاصطناعي والأتمتة الصناعية وهندسة صيانة اللوحات الإلكترونية المعقدة.</p>
+          <div style="display:flex; gap:10px;">
+            <a href="https://wa.me/962785181866" class="direct-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:safitaha1984@gmail.com" class="direct-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.stfixit.io" target="_blank" class="direct-icon"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="#page-1">الصفحة الرئيسية</a></li>
+            <li><a href="#page-2">المسيرة والخبرات الموثقة</a></li>
+            <li><a href="#page-3">مجالات الاستشارات الفنية</a></li>
+            <li><a href="#page-4">سلسلة الكتب الهندسية</a></li>
+            <li><a href="#page-stories">قصص نجاح الكوادر</a></li>
+            <li><a href="#page-achievements">معرض التوثيق والشهادات</a></li>
+            <li><a href="#page-5">البرامج التدريبية المعتمدة</a></li>
+            <li><a href="https://alsafi.my.canva.site/dagbh5vtunw" target="_blank">الشركاء والجهات</a></li>
+            <li><a href="https://alsafi.my.canva.site/zakertna" target="_blank">الأرشيف التوثيقي</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">بيانات الاتصال المباشر</h3>
+          <ul class="footer-links">
+            <li style="color:#fff;">📍 عمّان، الأردن - شارع سعيد الأندلسي</li>
+            <li style="color:#fff;">📞 هاتف: <span dir="ltr">+962 78 518 1866</span></li>
+            <li style="color:#fff;">✉️ بريد: safitaha1984@gmail.com</li>
+            <li style="color:#fff;">🌐 موقع: www.stfixit.io</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 م. صافي طه. جميع الحقوق محفوظة.</div>
+        <div>
+          <span onclick="openSecretModal()" style="color:rgba(255,255,255,0.2); cursor:pointer; font-size:11px;">Admin Access</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/962785181866" target="_blank" class="fab-whatsapp" aria-label="واتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="fab-back-to-top" id="backToTop" aria-label="أعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <button class="chat-trigger-btn" id="chatTriggerBtn" onclick="toggleChatWidget()" title="تحدث مع مستشار المبيعات الذكي">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div class="chat-widget-box" id="chatWidgetBox">
+    <div class="chat-header">
+      <div class="chat-header-user">
+        <div class="chat-header-avatar"><i class="fas fa-robot"></i></div>
+        <div class="chat-header-info">
+          <h4>مساعد م. صافي طه</h4>
+          <span>متصل الآن بالسيرفر والذكاء الاصطناعي</span>
+        </div>
+      </div>
+      <button onclick="toggleChatWidget()" style="background:transparent; color:var(--text-muted); font-size:18px;">✕</button>
+    </div>
+
+    <div class="chat-body" id="chatMessages">
+      <div class="chat-bubble bot" id="botWelcomeContainer"></div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" id="chatInputField" class="chat-input" placeholder="اكتب استفسارك هنا..." onkeypress="if(event.key==='Enter') sendChatMessage()" />
+      <button class="chat-send-btn" onclick="sendChatMessage()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <div class="admin-modal-backdrop" id="secretModal">
+    <div class="secret-box">
+      <button class="close-btn" onclick="closeSecretModal()">✕</button>
+      <div class="secret-box-icon"><i class="fas fa-key"></i></div>
+      <h3 style="color:#fff;">منطقة الإدارة السرية</h3>
+      <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:18px;">أدخل رمز المرور الخاص بالمهندس صافي للدخول</p>
+
+      <form onsubmit="handleSecretAuth(event)">
+        <input type="password" id="secretPassInput" class="form-control" placeholder="رمز المرور السري..." required />
+        <button type="submit" class="btn-glow" style="width: 100%;">فتح لوحة التحكم</button>
+        <div id="secretError" style="color: var(--danger); font-size: 12px; margin-top: 10px; display: none;">رمز المرور غير صحيح!</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="admin-overlay" id="adminOverlay">
+    <div class="admin-bar">
+      <div style="font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px;">
+        <i class="fas fa-sliders-h" style="color: var(--primary-cyan);"></i>
+        <span>لوحة التحكم وإدارة المحتوى | م. صافي طه</span>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button onclick="closeAdminDashboard()" class="btn-glow" style="padding: 6px 14px; font-size: 12px;">معاينة الموقع</button>
+        <button onclick="adminLogout()" style="background: rgba(239,68,68,0.2); color: var(--danger); border: 1px solid var(--danger); padding: 6px 12px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700;">خروج</button>
+      </div>
+    </div>
+
+    <div class="container" style="padding: 30px 24px;">
+      <div class="admin-tabs">
+        <button class="tab-btn active" onclick="switchAdminTab('tab-story', this)">إدارة وتعديل قصص النجاح</button>
+        <button class="tab-btn" onclick="switchAdminTab('tab-photo', this)">إدارة وتعديل المعرض والشهادات</button>
+        <button class="tab-btn" onclick="switchAdminTab('tab-books', this)">إدارة وتعديل الكتب والمؤلفات</button>
+      </div>
+
+      <div id="tab-story" class="tab-pane">
+        <div class="glass-card" style="padding: 24px; max-width: 800px; margin-bottom: 30px;">
+          <div class="edit-mode-indicator" id="storyEditIndicator">
+            <span><i class="fas fa-edit"></i> أنت الآن في وضع تعديل قصة نجاح</span>
+            <button type="button" onclick="cancelStoryEdit()" style="background:transparent; color:inherit; font-weight:800; text-decoration:underline;">إلغاء التعديل</button>
+          </div>
+
+          <h3 id="storyFormTitle" style="color:#fff; margin-bottom: 14px;">إضافة قصة نجاح متدرب جديد</h3>
+          <form onsubmit="saveSuccessStory(event)">
+            <div class="upload-zone">
+              <i class="fas fa-image" style="font-size: 28px; color: var(--primary-cyan); margin-bottom: 6px;"></i>
+              <div style="color: #fff; font-size: 13.5px; font-weight: 700;">اضغط لاختيار صورة المتدرب أو مشروعه</div>
+              <input type="file" id="storyImgFile" accept="image/*" onchange="previewFile(this, 'storyPreview', 'story')" />
+              <img id="storyPreview" class="upload-preview" alt="معاينة" />
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <input type="text" id="storyName" class="form-control" placeholder="اسم المتدرب" required />
+              <input type="text" id="storyTrack" class="form-control" placeholder="الدورة الملتحق بها" required />
+            </div>
+
+            <input type="text" id="storyBadge" class="form-control" placeholder="الإنجاز المحقق (مثال: تأسيس مركز صيانة)" required />
+            <textarea id="storyText" class="form-control" placeholder="نص قصة النجاح وتجربة المتدرب..." style="min-height: 90px;" required></textarea>
+
+            <div style="display:flex; gap:10px;">
+              <button type="submit" id="storySubmitBtn" class="btn-glow">نشر قصة النجاح فوراً</button>
+              <button type="button" id="storyCancelBtn" onclick="cancelStoryEdit()" class="btn-outline-glow" style="display:none; border-color:var(--danger); color:var(--danger);">إلغاء</button>
+            </div>
+          </form>
+        </div>
+
+        <h3 style="color:#fff; margin-bottom: 14px;">قصص النجاح المنشورة حالياً</h3>
+        <div class="admin-items-list" id="adminStoriesList"></div>
+      </div>
+
+      <div id="tab-photo" class="tab-pane" style="display: none;">
+        <div class="glass-card" style="padding: 24px; max-width: 800px; margin-bottom: 30px;">
+          <div class="edit-mode-indicator" id="galleryEditIndicator">
+            <span><i class="fas fa-edit"></i> أنت الآن في وضع تعديل صورة المعرض/الشهادة</span>
+            <button type="button" onclick="cancelGalleryEdit()" style="background:transparent; color:inherit; font-weight:800; text-decoration:underline;">إلغاء التعديل</button>
+          </div>
+
+          <h3 id="galleryFormTitle" style="color:#fff; margin-bottom: 14px;">رفع صورة جديدة لمعرض الإنجازات</h3>
+          <form onsubmit="saveGalleryPhoto(event)">
+            <div class="upload-zone">
+              <i class="fas fa-camera" style="font-size: 28px; color: var(--primary-cyan); margin-bottom: 6px;"></i>
+              <div style="color: #fff; font-size: 13.5px; font-weight: 700;">اضغط لاختيار الصورة من جهازك</div>
+              <input type="file" id="galleryImgFile" accept="image/*" onchange="previewFile(this, 'galleryPreview', 'gallery')" />
+              <img id="galleryPreview" class="upload-preview" alt="معاينة" />
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <input type="text" id="galleryTitle" class="form-control" placeholder="عنوان الصورة / التكريم" required />
+              <input type="text" id="galleryCategory" class="form-control" placeholder="القسم / الجهة" required />
+            </div>
+
+            <div style="display:flex; gap:10px;">
+              <button type="submit" id="gallerySubmitBtn" class="btn-glow">نشر الصورة في المعرض</button>
+              <button type="button" id="galleryCancelBtn" onclick="cancelGalleryEdit()" class="btn-outline-glow" style="display:none; border-color:var(--danger); color:var(--danger);">إلغاء</button>
+            </div>
+          </form>
+        </div>
+
+        <h3 style="color:#fff; margin-bottom: 14px;">الصور والشهادات المعروضة</h3>
+        <div class="admin-items-list" id="adminGalleryList"></div>
+      </div>
+
+      <div id="tab-books" class="tab-pane" style="display: none;">
+        <div class="glass-card" style="padding: 24px; max-width: 800px; margin-bottom: 30px;">
+          <div class="edit-mode-indicator" id="bookEditIndicator">
+            <span><i class="fas fa-edit"></i> أنت الآن في وضع تعديل بيانات ومحتوى الكتاب</span>
+            <button type="button" onclick="cancelBookEdit()" style="background:transparent; color:inherit; font-weight:800; text-decoration:underline;">إلغاء التعديل</button>
+          </div>
+
+          <h3 id="bookFormTitle" style="color:#fff; margin-bottom: 14px;">إضافة كتاب أو مؤلف جديد للمكتبة</h3>
+          <form onsubmit="saveBook(event)">
+            <div class="upload-zone">
+              <i class="fas fa-book-open" style="font-size: 28px; color: var(--primary-cyan); margin-bottom: 6px;"></i>
+              <div style="color: #fff; font-size: 13.5px; font-weight: 700;">اضغط لاختيار صورة الغلاف</div>
+              <input type="file" id="bookCoverFile" accept="image/*" onchange="previewFile(this, 'bookPreview', 'book')" />
+              <img id="bookPreview" class="upload-preview" alt="معاينة" />
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <input type="text" id="bookTitle" class="form-control" placeholder="عنوان الكتاب" required />
+              <input type="text" id="bookAuthor" class="form-control" value="م. صافي طه" required />
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <input type="text" id="bookMeta" class="form-control" placeholder="الصفحات والتنسيق (مثال: 340 صفحة | PDF)" required />
+              <input type="url" id="bookLink" class="form-control" placeholder="رابط التحميل المباشر أو Drive" value="#page-8" />
+            </div>
+
+            <textarea id="bookDesc" class="form-control" placeholder="نبذة مختصرة عن محتوى الكتاب..." style="min-height: 80px;" required></textarea>
+
+            <div style="display:flex; gap:10px;">
+              <button type="submit" id="bookSubmitBtn" class="btn-glow">إضافة الكتاب للمكتبة</button>
+              <button type="button" id="bookCancelBtn" onclick="cancelBookEdit()" class="btn-outline-glow" style="display:none; border-color:var(--danger); color:var(--danger);">إلغاء</button>
+            </div>
+          </form>
+        </div>
+
+        <h3 style="color:#fff; margin-bottom: 14px;">الكتب المعروضة حالياً</h3>
+        <div class="admin-items-list" id="adminBooksList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const initialBooks = [
+      {
+        id: 'b-1',
+        title: 'الصافي في صيانة الأجهزة الذكية والخلويات',
+        author: 'م. صافي طه',
+        badge: 'إصدار 2025/2026',
+        desc: 'دليل هندسي شامل يغطي تشريح بوردات الآيفون والأندرويد، دوائر الشحن والباور والإضاءة، وتتبع المسارات بالمخططات.',
+        meta: '360 صفحة | مخططات ملونة عالية الدقة',
+        link: 'https://wa.me/962785181866?text=طلب%20كتاب%20الصافي%20في%20صيانة%20الأجهزة%20الذكية',
+        image: ''
+      },
+      {
+        id: 'b-2',
+        title: 'أساسيات وتقنيات اللحام الدقيق (Micro-Soldering)',
+        author: 'م. صافي طه',
+        badge: 'إصدار معتمد',
+        desc: 'خطوات تطبيقية لاحتراف الكاوي والهوت إير، شبلنة رقاقات BGA، تعويض الخطوط المجهرية، وصيانة بوردات الساندويتش.',
+        meta: '220 صفحة | معمل تطبيقي مدعم بالصور',
+        link: 'https://wa.me/962785181866?text=طلب%20كتاب%20اللحام%20الدقيق',
+        image: ''
+      },
+      {
+        id: 'b-3',
+        title: 'استكشاف أعطال الحواسيب المحمولة والمازربورد',
+        author: 'م. صافي طه',
+        badge: 'تشخيص البوردات',
+        desc: 'تحليل دوائر تغذية اللابتوب، شحن وبرمجة رقاقات BIOS وSuper I/O، وفحص الممانعات وإشارات الإقلاع.',
+        meta: '280 صفحة | جداول ممانعات تفصيلية',
+        link: 'https://wa.me/962785181866?text=طلب%20كتاب%20أعطال%20الحواسيب',
+        image: ''
+      },
+      {
+        id: 'b-4',
+        title: 'البرمجيات والسوفت وير المتقدم للأجهزة الذكية',
+        author: 'م. صافي طه',
+        badge: 'سوفت وير وبوكسات',
+        desc: 'التفليش الآمن، حلول Bootloop، استخراج الدامبات، تخطي الحسابات FRP، واستخدام البوكسات والدناجل الحديثة.',
+        meta: '200 صفحة | تحديثات سيرفرات رسمية',
+        link: 'https://wa.me/962785181866?text=طلب%20كتاب%20السوفت%20وير',
+        image: ''
+      }
+    ];
+
+    const initialStories = [
+      {
+        id: 'st-1',
+        name: 'م. طارق العبادي',
+        track: 'دبلوم صيانة اللوحات والمايكروسولديرنج',
+        badge: 'افتتاح مركز صيانة معتمد في عمّان',
+        body: 'بدأت التدريب بدون أي خلفية باللحام المجهري، وبفضل التوجيه العملي المباشر للمهندس صافي تعلمت شبلنة الآيسيات وتعويض المسارات المقطوعة بدقة، والآن أدير مركزي الخاص في عمّان بنجاح.',
+        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
+      },
+      {
+        id: 'st-2',
+        name: 'سامر قاسم',
+        track: 'دورة صيانة وبرمجة أنظمة التحكم PLC',
+        badge: 'فني تحكم صناعي في مصانع سحاب',
+        body: 'التدريب العملي والمكثف على سيناريوهات الأعطال الواقعية أهلني مباشرة للالتحاق بخطوط الإنتاج ومتابعة أعطال الكنترول بدقة عالية وثقة كاملة.',
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+      }
+    ];
+
+    const initialGallery = [
+      {
+        id: 'gl-1',
+        title: 'برنامج تدريب الأدلة الجنائية واسترجاع البيانات',
+        category: 'مديرية الأمن العام - 2022',
+        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300"><rect width="500" height="300" fill="%230b1528"/><rect x="20" y="20" width="460" height="260" rx="8" fill="none" stroke="%2300d2ff" stroke-width="2"/><text x="250" y="140" font-size="20" fill="%23ffffff" font-weight="bold" text-anchor="middle" font-family="sans-serif">مديرية الأمن العام - الأدلة الجنائية</text><text x="250" y="180" font-size="14" fill="%2300d2ff" text-anchor="middle" font-family="sans-serif">تدريب استرجاع البيانات المتقدم (60 ساعة)</text></svg>'
+      },
+      {
+        id: 'gl-2',
+        title: 'تأهيل مدربي التدريب المهني (TOT)',
+        category: 'كلية لومينوس الجامعية التقنية LTUC',
+        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300"><rect width="500" height="300" fill="%23070e1c"/><rect x="20" y="20" width="460" height="260" rx="8" fill="none" stroke="%2300d2ff" stroke-width="2"/><text x="250" y="140" font-size="20" fill="%23ffffff" font-weight="bold" text-anchor="middle" font-family="sans-serif">كلية لومينوس الجامعية التقنية</text><text x="250" y="180" font-size="14" fill="%2334d399" text-anchor="middle" font-family="sans-serif">تأهيل كادر المدربين وصيانة PLC وأنظمة الطاقة</text></svg>'
+      },
+      {
+        id: 'gl-3',
+        title: 'برامج التدريب المهني وصيانة الإلكترونيات',
+        category: 'أمانة عمّان - حدائق الملكة رانيا العبدالله',
+        image: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300"><rect width="500" height="300" fill="%230b1528"/><rect x="20" y="20" width="460" height="260" rx="8" fill="none" stroke="%2300d2ff" stroke-width="2"/><text x="250" y="140" font-size="20" fill="%23ffffff" font-weight="bold" text-anchor="middle" font-family="sans-serif">أمانة عمّان الكبرى</text><text x="250" y="180" font-size="14" fill="%2338bdf8" text-anchor="middle" font-family="sans-serif">دورات الذكاء الاصطناعي والصيانة الإلكترونية المتقدمة</text></svg>'
+      }
+    ];
+
+    function loadStorage(key, fallback) {
+      const d = localStorage.getItem(key);
+      return d ? JSON.parse(d) : fallback;
+    }
+    function saveStorage(key, val) {
+      localStorage.setItem(key, JSON.stringify(val));
+    }
+
+    let booksData = loadStorage('alsafi_p_books', initialBooks);
+    let storiesData = loadStorage('alsafi_p_stories', initialStories);
+    let galleryData = loadStorage('alsafi_p_gallery', initialGallery);
+
+    let editingStoryId = null;
+    let editingGalleryId = null;
+    let editingBookId = null;
+
+    let tempStoryImg = '';
+    let tempGalleryImg = '';
+    let tempBookImg = '';
+
+    function renderBooks() {
+      const container = document.getElementById('booksDisplayContainer');
+      container.innerHTML = '';
+      booksData.forEach(b => {
+        const card = document.createElement('div');
+        card.className = 'glass-card book-card';
+        card.innerHTML = `
+          <div class="book-3d-mockup">
+            ${b.image ? `<img src="${b.image}" alt="${b.title}" />` : `
+              <div class="book-3d-spine"></div>
+              <span class="book-chip">مرجع هندسي</span>
+              <div class="book-3d-title">${b.title}</div>
+              <div class="book-3d-author">${b.author}</div>
+            `}
+          </div>
+          <div class="book-info">
+            <span class="book-badge">${b.badge}</span>
+            <h3 class="book-name">${b.title}</h3>
+            <span class="book-author-tag">المؤلف: ${b.author}</span>
+            <p class="book-desc">${b.desc}</p>
+            <div class="book-meta"><span>📄 ${b.meta}</span></div>
+            <div class="book-actions">
+              <a href="${b.link}" target="_blank" class="btn-glow" style="padding:6px 14px; font-size:12px;">تحميل / طلب الكتاب</a>
+              <a href="https://wa.me/962785181866?text=استفسار%20عن%20كتاب%20${encodeURIComponent(b.title)}" target="_blank" class="btn-outline-glow" style="padding:6px 12px; font-size:12px;">واتساب</a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderStories() {
+      const el = document.getElementById('storiesContainer');
+      el.innerHTML = '';
+      storiesData.forEach(s => {
+        const div = document.createElement('div');
+        div.className = 'glass-card story-card';
+        div.innerHTML = `
+          <div class="story-header">
+            <img src="${s.image || 'https://via.placeholder.com/60/00d2ff/070b14?text=Safi'}" class="story-avatar" alt="${s.name}" />
+            <div>
+              <div class="story-name">${s.name}</div>
+              <div class="story-track">${s.track}</div>
+            </div>
+          </div>
+          <div class="story-body">"${s.body}"</div>
+          <div class="story-achievement-tag"><i class="fas fa-award"></i> ${s.badge}</div>
+        `;
+        el.appendChild(div);
+      });
+    }
+
+    function renderGallery() {
+      const el = document.getElementById('achievementsDisplayContainer');
+      el.innerHTML = '';
+      galleryData.forEach(g => {
+        const div = document.createElement('div');
+        div.className = 'glass-card gallery-card';
+        div.innerHTML = `
+          <div class="gallery-img-box">
+            <img src="${g.image}" alt="${g.title}" />
+          </div>
+          <div class="gallery-info">
+            <h4>${g.title}</h4>
+            <span>${g.category}</span>
+          </div>
+        `;
+        el.appendChild(div);
+      });
+    }
+
+    function renderAdminLists() {
+      const sBox = document.getElementById('adminStoriesList');
+      sBox.innerHTML = '';
+      storiesData.forEach(s => {
+        const d = document.createElement('div');
+        d.className = 'admin-item-card';
+        d.innerHTML = `
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <img src="${s.image}" style="width:38px; height:38px; border-radius:50%; object-fit:cover;" />
+            <div>
+              <strong style="color:#fff; font-size:13px;">${s.name}</strong>
+              <div style="font-size:11px; color:var(--primary-cyan);">${s.track}</div>
+            </div>
+          </div>
+          <div style="font-size:11.5px; color:var(--text-muted); margin-bottom:8px;">${s.body.substring(0, 60)}...</div>
+          <div class="admin-btn-row">
+            <button class="admin-edit-btn" onclick="startEditStory('${s.id}')"><i class="fas fa-edit"></i> تعديل</button>
+            <button class="admin-del-btn" onclick="deleteStory('${s.id}')"><i class="fas fa-trash"></i> حذف</button>
+          </div>
+        `;
+        sBox.appendChild(d);
+      });
+
+      const gBox = document.getElementById('adminGalleryList');
+      gBox.innerHTML = '';
+      galleryData.forEach(g => {
+        const d = document.createElement('div');
+        d.className = 'admin-item-card';
+        d.innerHTML = `
+          <img src="${g.image}" style="width:100%; height:110px; object-fit:cover; border-radius:4px;" />
+          <div style="font-weight:700; color:#fff; font-size:12.5px; margin-top:6px;">${g.title}</div>
+          <div style="font-size:11px; color:var(--primary-cyan);">${g.category}</div>
+          <div class="admin-btn-row">
+            <button class="admin-edit-btn" onclick="startEditGallery('${g.id}')"><i class="fas fa-edit"></i> تعديل</button>
+            <button class="admin-del-btn" onclick="deleteGalleryPhoto('${g.id}')"><i class="fas fa-trash"></i> حذف</button>
+          </div>
+        `;
+        gBox.appendChild(d);
+      });
+
+      const bBox = document.getElementById('adminBooksList');
+      bBox.innerHTML = '';
+      booksData.forEach(b => {
+        const d = document.createElement('div');
+        d.className = 'admin-item-card';
+        d.innerHTML = `
+          <div style="font-weight:700; color:#fff; font-size:13px;">${b.title}</div>
+          <div style="font-size:11.5px; color:var(--text-muted);">${b.meta}</div>
+          <div class="admin-btn-row">
+            <button class="admin-edit-btn" onclick="startEditBook('${b.id}')"><i class="fas fa-edit"></i> تعديل</button>
+            <button class="admin-del-btn" onclick="deleteBook('${b.id}')"><i class="fas fa-trash"></i> حذف</button>
+          </div>
+        `;
+        bBox.appendChild(d);
+      });
+    }
+
+    // Story Handlers
+    function startEditStory(id) {
+      const item = storiesData.find(s => s.id === id);
+      if (!item) return;
+      editingStoryId = id; tempStoryImg = item.image || '';
+      document.getElementById('storyName').value = item.name;
+      document.getElementById('storyTrack').value = item.track;
+      document.getElementById('storyBadge').value = item.badge;
+      document.getElementById('storyText').value = item.body;
+      const preview = document.getElementById('storyPreview');
+      if (item.image) { preview.src = item.image; preview.style.display = 'block'; }
+      document.getElementById('storyFormTitle').innerHTML = '<i class="fas fa-edit" style="color:var(--warning);"></i> تعديل قصة النجاح';
+      document.getElementById('storySubmitBtn').textContent = 'حفظ التعديلات';
+      document.getElementById('storyEditIndicator').style.display = 'flex';
+      document.getElementById('storyCancelBtn').style.display = 'inline-flex';
+      document.getElementById('tab-story').scrollIntoView({ behavior: 'smooth' });
+    }
+    function cancelStoryEdit() {
+      editingStoryId = null; tempStoryImg = '';
+      document.getElementById('storyName').value = ''; document.getElementById('storyTrack').value = '';
+      document.getElementById('storyBadge').value = ''; document.getElementById('storyText').value = '';
+      document.getElementById('storyImgFile').value = ''; document.getElementById('storyPreview').style.display = 'none';
+      document.getElementById('storyFormTitle').textContent = 'إضافة قصة نجاح متدرب جديد';
+      document.getElementById('storySubmitBtn').textContent = 'نشر قصة النجاح فوراً';
+      document.getElementById('storyEditIndicator').style.display = 'none';
+      document.getElementById('storyCancelBtn').style.display = 'none';
+    }
+    function saveSuccessStory(e) {
+      e.preventDefault();
+      const name = document.getElementById('storyName').value.trim();
+      const track = document.getElementById('storyTrack').value.trim();
+      const badge = document.getElementById('storyBadge').value.trim();
+      const body = document.getElementById('storyText').value.trim();
+      if (editingStoryId) {
+        const index = storiesData.findIndex(s => s.id === editingStoryId);
+        if (index !== -1) storiesData[index] = { ...storiesData[index], name, track, badge, body, image: tempStoryImg || storiesData[index].image };
+        alert('تم حفظ تعديل قصة النجاح!');
+      } else {
+        storiesData.unshift({ id: 'st-' + Date.now(), name, track, badge, body, image: tempStoryImg || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' });
+        alert('تم نشر قصة النجاح!');
+      }
+      cancelStoryEdit(); saveStorage('alsafi_p_stories', storiesData); renderAdminLists(); renderStories();
+    }
+    function deleteStory(id) {
+      if (confirm('تأكيد حذف قصة النجاح هذه؟')) {
+        if (editingStoryId === id) cancelStoryEdit();
+        storiesData = storiesData.filter(s => s.id !== id); saveStorage('alsafi_p_stories', storiesData);
+        renderAdminLists(); renderStories();
+      }
+    }
+
+    // Gallery Handlers
+    function startEditGallery(id) {
+      const item = galleryData.find(g => g.id === id);
+      if (!item) return;
+      editingGalleryId = id; tempGalleryImg = item.image;
+      document.getElementById('galleryTitle').value = item.title;
+      document.getElementById('galleryCategory').value = item.category;
+      const preview = document.getElementById('galleryPreview');
+      preview.src = item.image; preview.style.display = 'block';
+      document.getElementById('galleryFormTitle').innerHTML = '<i class="fas fa-edit" style="color:var(--warning);"></i> تعديل الصورة';
+      document.getElementById('gallerySubmitBtn').textContent = 'حفظ التعديلات';
+      document.getElementById('galleryEditIndicator').style.display = 'flex';
+      document.getElementById('galleryCancelBtn').style.display = 'inline-flex';
+      document.getElementById('tab-photo').scrollIntoView({ behavior: 'smooth' });
+    }
+    function cancelGalleryEdit() {
+      editingGalleryId = null; tempGalleryImg = '';
+      document.getElementById('galleryTitle').value = ''; document.getElementById('galleryCategory').value = '';
+      document.getElementById('galleryImgFile').value = ''; document.getElementById('galleryPreview').style.display = 'none';
+      document.getElementById('galleryFormTitle').textContent = 'رفع صورة جديدة لمعرض الإنجازات';
+      document.getElementById('gallerySubmitBtn').textContent = 'نشر الصورة في المعرض';
+      document.getElementById('galleryEditIndicator').style.display = 'none';
+      document.getElementById('galleryCancelBtn').style.display = 'none';
+    }
+    function saveGalleryPhoto(e) {
+      e.preventDefault();
+      const title = document.getElementById('galleryTitle').value.trim();
+      const category = document.getElementById('galleryCategory').value.trim();
+      if (editingGalleryId) {
+        const index = galleryData.findIndex(g => g.id === editingGalleryId);
+        if (index !== -1) galleryData[index] = { ...galleryData[index], title, category, image: tempGalleryImg || galleryData[index].image };
+        alert('تم حفظ تعديلات الصورة!');
+      } else {
+        if (!tempGalleryImg) return alert('يرجى اختيار صورة أولاً');
+        galleryData.unshift({ id: 'gl-' + Date.now(), title, category, image: tempGalleryImg });
+        alert('تم نشر الصورة!');
+      }
+      cancelGalleryEdit(); saveStorage('alsafi_p_gallery', galleryData); renderAdminLists(); renderGallery();
+    }
+    function deleteGalleryPhoto(id) {
+      if (confirm('تأكيد حذف هذه الصورة؟')) {
+        if (editingGalleryId === id) cancelGalleryEdit();
+        galleryData = galleryData.filter(g => g.id !== id); saveStorage('alsafi_p_gallery', galleryData);
+        renderAdminLists(); renderGallery();
+      }
+    }
+
+    // Books Handlers
+    function startEditBook(id) {
+      const item = booksData.find(b => b.id === id);
+      if (!item) return;
+      editingBookId = id; tempBookImg = item.image || '';
+      document.getElementById('bookTitle').value = item.title;
+      document.getElementById('bookAuthor').value = item.author;
+      document.getElementById('bookMeta').value = item.meta;
+      document.getElementById('bookLink').value = item.link;
+      document.getElementById('bookDesc').value = item.desc;
+      const preview = document.getElementById('bookPreview');
+      if (item.image) { preview.src = item.image; preview.style.display = 'block'; }
+      document.getElementById('bookFormTitle').innerHTML = '<i class="fas fa-edit" style="color:var(--warning);"></i> تعديل الكتاب';
+      document.getElementById('bookSubmitBtn').textContent = 'حفظ التعديلات';
+      document.getElementById('bookEditIndicator').style.display = 'flex';
+      document.getElementById('bookCancelBtn').style.display = 'inline-flex';
+      document.getElementById('tab-books').scrollIntoView({ behavior: 'smooth' });
+    }
+    function cancelBookEdit() {
+      editingBookId = null; tempBookImg = '';
+      document.getElementById('bookTitle').value = ''; document.getElementById('bookAuthor').value = 'م. صافي طه';
+      document.getElementById('bookMeta').value = ''; document.getElementById('bookLink').value = '#page-8';
+      document.getElementById('bookDesc').value = ''; document.getElementById('bookCoverFile').value = '';
+      document.getElementById('bookPreview').style.display = 'none';
+      document.getElementById('bookFormTitle').textContent = 'إضافة كتاب أو مؤلف جديد للمكتبة';
+      document.getElementById('bookSubmitBtn').textContent = 'إضافة الكتاب للمكتبة';
+      document.getElementById('bookEditIndicator').style.display = 'none';
+      document.getElementById('bookCancelBtn').style.display = 'none';
+    }
+    function saveBook(e) {
+      e.preventDefault();
+      const title = document.getElementById('bookTitle').value.trim();
+      const author = document.getElementById('bookAuthor').value.trim();
+      const meta = document.getElementById('bookMeta').value.trim();
+      const link = document.getElementById('bookLink').value.trim() || '#page-8';
+      const desc = document.getElementById('bookDesc').value.trim();
+      if (editingBookId) {
+        const index = booksData.findIndex(b => b.id === editingBookId);
+        if (index !== -1) booksData[index] = { ...booksData[index], title, author, meta, link, desc, image: tempBookImg || booksData[index].image };
+        alert('تم حفظ تعديلات الكتاب!');
+      } else {
+        booksData.unshift({ id: 'b-' + Date.now(), title, author, badge: 'إصدار جديد', desc, meta, link, image: tempBookImg });
+        alert('تمت إضافة الكتاب للمكتبة!');
+      }
+      cancelBookEdit(); saveStorage('alsafi_p_books', booksData); renderAdminLists(); renderBooks();
+    }
+    function deleteBook(id) {
+      if (confirm('تأكيد حذف هذا الكتاب؟')) {
+        if (editingBookId === id) cancelBookEdit();
+        booksData = booksData.filter(b => b.id !== id); saveStorage('alsafi_p_books', booksData);
+        renderAdminLists(); renderBooks();
+      }
+    }
+
+    let logoClickCount = 0;
+    let logoClickTimer;
+    const logoTrigger = document.getElementById('secretLogoTrigger');
+
+    logoTrigger.addEventListener('click', () => {
+      logoClickCount++;
+      clearTimeout(logoClickTimer);
+      if (logoClickCount === 2) logoTrigger.style.boxShadow = '0 0 22px #00d2ff';
+      if (logoClickCount >= 3) {
+        logoClickCount = 0; openSecretModal();
+      } else {
+        logoClickTimer = setTimeout(() => { logoClickCount = 0; logoTrigger.style.boxShadow = '0 0 16px rgba(0, 210, 255, 0.25)'; }, 800);
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.shiftKey && (e.key === 'S' || e.key === 's' || e.code === 'KeyS')) {
+        e.preventDefault(); openSecretModal();
+      }
+    });
+
+    function openSecretModal() {
+      if (sessionStorage.getItem('alsafi_secret_logged') === 'true') openAdminDashboard();
+      else { document.getElementById('secretModal').classList.add('active'); document.getElementById('secretPassInput').focus(); }
+    }
+    function closeSecretModal() {
+      document.getElementById('secretModal').classList.remove('active');
+      document.getElementById('secretError').style.display = 'none';
+    }
+    function handleSecretAuth(e) {
+      e.preventDefault();
+      const pass = document.getElementById('secretPassInput').value.trim();
+      if (pass === 'safi1984' || pass === 'admin' || pass === '0785181866') {
+        sessionStorage.setItem('alsafi_secret_logged', 'true');
+        closeSecretModal(); openAdminDashboard();
+      } else {
+        document.getElementById('secretError').style.display = 'block';
+      }
+    }
+    function openAdminDashboard() { document.getElementById('adminOverlay').classList.add('active'); renderAdminLists(); }
+    function closeAdminDashboard() {
+      document.getElementById('adminOverlay').classList.remove('active');
+      renderBooks(); renderStories(); renderGallery();
+    }
+    function adminLogout() {
+      sessionStorage.removeItem('alsafi_secret_logged');
+      document.getElementById('adminOverlay').classList.remove('active');
+    }
+    function switchAdminTab(tabId, btn) {
+      document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).style.display = 'block';
+      btn.classList.add('active');
+    }
+
+    function previewFile(input, previewId, type) {
+      const f = input.files[0];
+      if (f) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const imgEl = document.getElementById(previewId);
+          imgEl.src = e.target.result; imgEl.style.display = 'block';
+          if (type === 'story') tempStoryImg = e.target.result;
+          else if (type === 'gallery') tempGalleryImg = e.target.result;
+          else if (type === 'book') tempBookImg = e.target.result;
+        };
+        reader.readAsDataURL(f);
+      }
+    }
+
+    // AI Sales & Support Chatbot (Connected to chat.php)
+    function initBotWelcome() {
+      const container = document.getElementById('botWelcomeContainer');
+      container.innerHTML = `
+        مرحباً بك! 🤖 أنا المساعد الذكي وخبير الاستشارات للمهندس صافي طه.<br>
+        كيف يمكنني خدمتك اليوم بخصوص برامجنا التدريبية، استشارات الأتمتة للمصانع، أو سلسلة الكتب الهندسية؟<br><br>
+        <div class="chat-chips-row">
+          <span class="chat-chip" onclick="sendQuickQuery('ما هي تفاصيل وأسعار الدورات التي يقدمها م. صافي؟')">🎓 أسعار وتفاصيل البرامج</span>
+          <span class="chat-chip" onclick="sendQuickQuery('أريد شراء أو تحميل كتب الصافي الهندسية')">📚 سلسلة الكتب الهندسية</span>
+          <span class="chat-chip" onclick="sendQuickQuery('أريد استشارة هندسية في مصنعي أو ورشتي')">⚙️ استشارات الأتمتة والمصانع</span>
+          <span class="chat-chip" onclick="sendQuickQuery('أريد التحدث مع م. صافي طه مباشرة على الواتساب')">📲 تواصل واتساب فوري</span>
+        </div>
+      `;
+    }
+
+    function toggleChatWidget() {
+      const chatBox = document.getElementById('chatWidgetBox');
+      chatBox.classList.toggle('active');
+      if (chatBox.classList.contains('active')) {
+        document.getElementById('chatInputField').focus();
+      }
+    }
+
+    function sendQuickQuery(text) {
+      document.getElementById('chatInputField').value = text;
+      sendChatMessage();
+    }
+
+    async function sendChatMessage() {
+      const input = document.getElementById('chatInputField');
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendChatMessage(text, 'user');
+      input.value = '';
+
+      const typingId = 'typing-' + Date.now();
+      appendTypingIndicator(typingId);
+
+      let botResponse = '';
+
+      try {
+        const res = await fetch('chat.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          botResponse = data.reply;
+        } else {
+          console.warn('Server error, falling back:', data.error);
+          botResponse = getSmartLocalResponse(text);
+        }
+      } catch (err) {
+        console.warn('Network error, falling back:', err);
+        botResponse = getSmartLocalResponse(text);
+      }
+
+      removeTypingIndicator(typingId);
+      appendChatMessage(botResponse, 'bot');
+    }
+
+    function appendChatMessage(text, sender) {
+      const chatBody = document.getElementById('chatMessages');
+      const bubble = document.createElement('div');
+      bubble.className = `chat-bubble ${sender}`;
+      bubble.innerHTML = text.replace(/\n/g, '<br>');
+      chatBody.appendChild(bubble);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function appendTypingIndicator(id) {
+      const chatBody = document.getElementById('chatMessages');
+      const typing = document.createElement('div');
+      typing.id = id;
+      typing.className = 'chat-bubble bot';
+      typing.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحليل وصياغة الرد الهندسي...';
+      chatBody.appendChild(typing);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function removeTypingIndicator(id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    }
+
+    function getSmartLocalResponse(query) {
+      const q = query.toLowerCase();
+
+      if (q.includes('سعر') || q.includes('اسعار') || q.includes('تكلفة') || q.includes('دورة') || q.includes('دورات') || q.includes('دبلوم')) {
+        return `📌 **البرامج التدريبية المعتمدة بإشراف م. صافي طه:**<br>
+        1️⃣ **دبلوم صيانة الهواتف والمايكروسولديرنج:** (3 أشهر - 350$)<br>
+        2️⃣ **دورة اللحام المتقدم BGA و CPU:** (شهر - 250$)<br>
+        3️⃣ **برمجة وتحكم صناعي PLC & SCADA:** (شهرين - 300$)<br>
+        4️⃣ **تشغيل وبرمجة ماكينات CNC:** (6 أسابيع - 250$)<br>
+        5️⃣ **صيانة إنفرترات الطاقة الشمسية الهجينة:** (شهر - 200$)<br>
+        6️⃣ **دورة تأهيل المدربين TOT:** (شهرين - معتمدة دولياً)<br><br>
+        👉 <a href="https://wa.me/962785181866?text=أريد%20التسجيل%20في%20الدورات" target="_blank" style="color:var(--primary-cyan); font-weight:800; text-decoration:underline;">تواصل عبر واتساب م. صافي طه لحجز مقعدك: 0785181866</a>`;
+      }
+
+      if (q.includes('كتاب') || q.includes('كتب') || q.includes('مكتبة') || q.includes('مؤلف') || q.includes('شراء')) {
+        return `📚 **سلسلة كتب ومؤلفات م. صافي طه الهندسية:**<br>
+        - **الصافي في صيانة الأجهزة الذكية والخلويات (2025/2026):** 360 صفحة ملونة مع خرائط تفصيلية.<br>
+        - **أساسيات وتقنيات اللحام الدقيق (Micro-Soldering):** 220 صفحة.<br>
+        - **استكشاف أعطال الحواسيب والمازربورد:** 280 صفحة.<br>
+        - **البرمجيات والسوفت وير المتقدم للأجهزة الذكية:** 200 صفحة.<br><br>
+        📦 لطلب نسختك الإلكترونية أو الورقية:<br>
+        👉 <a href="https://wa.me/962785181866?text=أريد%20طلب%20كتب%20الصافي" target="_blank" style="color:var(--primary-cyan); font-weight:800; text-decoration:underline;">اضغط هنا لطلب الكتب عبر الواتساب (0785181866)</a>`;
+      }
+
+      if (q.includes('cnc') || q.includes('سي ان سي') || q.includes('ماكينات')) {
+        return `⚙️ **استشارات وبرامج ماكينات CNC:**<br>
+        بإشراف م. صافي طه نقدم:<br>
+        - برمجة G-Code والمعايرة الدقيقة لمحاور الحركة.<br>
+        - فحص وصيانة محركات السيرفو ومغيرات السرعة VFD.<br>
+        - حل أعطال كروت الكنترول وتحديث الماكينات الصناعية.<br><br>
+        👉 <a href="https://wa.me/962785181866?text=استفسار%20عن%20برمجة%20وصيانة%20CNC" target="_blank" style="color:var(--primary-cyan); font-weight:800;">تنسيق استشارة أو دورة مع م. صافي عبر واتساب (0785181866)</a>`;
+      }
+
+      if (q.includes('plc') || q.includes('أتمتة') || q.includes('اتمتة') || q.includes('scada') || q.includes('سكادا')) {
+        return `🏭 **الأتمتة الصناعية وPLC & SCADA:**<br>
+        - برمجة لوحات التحكم المنطقي المبرمج وربط شاشات HMI.<br>
+        - صيانة كروت الدخل والخرج وحساسات خطوط الإنتاج.<br>
+        - استشارات تحديث المصانع (Retrofitting) إلى أنظمة ذكية.<br><br>
+        👉 <a href="https://wa.me/962785181866?text=استفسار%20عن%20الأتمتة%20الصناعية%20وPLC" target="_blank" style="color:var(--primary-cyan); font-weight:800;">تواصل مباشرة عبر واتساب: 0785181866</a>`;
+      }
+
+      if (q.includes('انفرتر') || q.includes('طاقة') || q.includes('شمسية')) {
+        return `⚡ **صيانة إنفرترات الطاقة الشمسية الهجينة:**<br>
+        - فحص مراحل الـ DC-DC وقنطرة الإنفرتر واختبار ترانزستورات IGBT وMOSFET.<br>
+        - تتبع كودات الأخطاء ودوائر الشحن MPPT وحماية البطاريات.<br><br>
+        👉 <a href="https://wa.me/962785181866?text=استفسار%20عن%20صيانة%20إنفرترات%20الطاقة%20الشمسية" target="_blank" style="color:var(--primary-cyan); font-weight:800;">سجل الآن عبر واتساب م. صافي: 0785181866</a>`;
+      }
+
+      return `أهلاً بك يا فندم! أنا المساعد الهندسي ومسؤول الاستشارات للمهندس صافي طه (خبرة +25 عاماً).<br>
+      يسعدني جداً إفادتك في تخصصاتنا المعتمدة:<br>
+      • صيانة الهواتف واللحام الدقيق (Micro-Soldering)<br>
+      • الأتمتة الصناعية وبرمجة PLC وSCADA<br>
+      • تشغيل وصيانة ماكينات CNC<br>
+      • صيانة إنفرترات الطاقة الشمسية<br>
+      • طلب سلسلة كتب الصافي الهندسية<br><br>
+      👉 <a href="https://wa.me/962785181866" target="_blank" style="color:var(--primary-cyan); font-weight:800;">تفضل بالتواصل المباشر مع م. صافي طه عبر واتساب (0785181866)</a>`;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderBooks();
+      renderStories();
+      renderGallery();
+      initBotWelcome();
+
+      const mt = document.getElementById('mobile-toggle');
+      const nm = document.getElementById('nav-menu');
+      mt.addEventListener('click', () => nm.classList.toggle('open'));
+      nm.querySelectorAll('a').forEach(l => l.addEventListener('click', () => nm.classList.remove('open')));
+
+      const btt = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) btt.classList.add('show');
+        else btt.classList.remove('show');
+      });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    });
+  </script>
+</body>
+</html>
