@@ -1,18 +1,19 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type');
 
-// 1. مفتاح Gemini السري (محمي تماماً داخل السيرفر)
-define('GEMINI_API_KEY', 'YOUR_GEMINI_API_KEY_HERE');
+// تم تصحيح الطريقة البرمجية لتعريف المفتاح بأمان تام داخل السيرفر
+define('GEMINI_API_KEY', 'AQ.Ab8RN6K4ZvLC8wElIWbQ6FKO_PGMI_fAg7WJzNN6c512Sp8V9Q');
 
-// 2. التحقق من طريقة الطلب
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo json_encode(['success' => false, 'error' => 'Method Not Allowed']);
     exit;
 }
 
-// 3. قراءة محتوى الرسالة القادمة من المتصفح
 $rawInput = file_get_contents('php://input');
 $data = json_decode($rawInput, true);
 $userMessage = trim($data['message'] ?? '');
@@ -23,14 +24,13 @@ if (empty($userMessage)) {
     exit;
 }
 
-// 4. قاعدة المعرفة والهندسة الترويجية للمهندس صافي طه
 $systemInstruction = <<<TEXT
 أنت "مستشار المبيعات والخبير التقني الحصري" للمهندس صافي طه (Eng. Safi Taha) في عمّان، الأردن.
-دورك: مهندس تسويق ومبيعات ذكي، لبق، يوضح القيمة الفنية بدقة ويوجه العميل دائماً لحجز الدورة أو طلب الاستشارة والكتب عبر واتساب مباشرة.
+دورك: مهندس تسويق ومبيعات ذكي، لبق، يوضح القيمة الفنية بدقة لجميع خدمات وبرامج م. صافي طه، ويوجه العميل دائماً لحجز الدورة أو طلب الاستشارة والكتب عبر واتساب مباشرة.
 
 بيانات المهندس صافي طه:
 - المسمى: مستشار تقني وتنفيذي، خبير الذكاء الاصطناعي والأتمتة الصناعية.
-- الخبرة: أكثر من 25 عاماً موثقة. قام بتدريب كوادر مديرية الأمن العام (الأدلة الجنائية)، كلية لومينوس (LTUC)، أمانة عمّان الكبرى، والجامعة الأردنية.
+- الخبرة: أكثر من 25 عاماً موثقة. درب كوادر مديرية الأمن العام (الأدلة الجنائية)، كلية لومينوس (LTUC)، أمانة عمّان الكبرى، والجامعة الأردنية.
 - رقم التواصل والواتساب المباشر: 0785181866 (+962 78 518 1866).
 - المقر: عمّان، الأردن - شارع سعيد الأندلسي / شارع الجامعة. المنصة الرسمية: www.stfixit.io.
 
@@ -51,7 +51,7 @@ $systemInstruction = <<<TEXT
 7. سلسلة كتب الصافي الهندسية:
    - كتاب صيانة الأجهزة الذكية الشامل (2025/2026 - 360 صفحة).
    - كتاب أساسيات اللحام الدقيق (220 صفحة).
-   - كتاب أعطال الحواسيب والمازربورد (280 صفحة).
+   - كتاب أعطال الحواسيب والمبارزورد (280 صفحة).
    - كتاب السوفت وير وتخطي الحسابات (200 صفحة).
 8. الاستشارات الهندسية للمصانع والورش (Retrofitting وتأهيل خطوط الإنتاج).
 
@@ -61,7 +61,6 @@ $systemInstruction = <<<TEXT
 - اختم الرد دائماً برابط واتساب صريح للتواصل مع م. صافي طه: 0785181866.
 TEXT;
 
-// 5. تجهيز الطلب وإرساله إلى Gemini API
 $promptPayload = [
     'contents' => [
         [
@@ -77,7 +76,7 @@ $promptPayload = [
     ]
 ];
 
-// استخدام الموديل المستقر
+// استخدام الثابت الصحيح والمعرف بـ GEMINI_API_KEY
 $model = 'gemini-1.5-flash';
 $url = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key=" . GEMINI_API_KEY;
 
@@ -105,8 +104,6 @@ $result = json_decode($response, true);
 
 if ($httpCode === 200 && isset($result['candidates'][0]['content']['parts'][0]['text'])) {
     $replyText = $result['candidates'][0]['content']['parts'][0]['text'];
-    
-    // إضافة زر الواتساب التفاعلي في نهاية الرد
     $whatsAppUrl = 'https://wa.me/962785181866?text=' . urlencode('مرحباً م. صافي، تحدثت مع المساعد الذكي وأريد استكمال التفاصيل بخصوص: ' . mb_substr($userMessage, 0, 40));
     $replyText .= "<br><br>👉 <a href='{$whatsAppUrl}' target='_blank' style='color:#00d2ff; font-weight:900; text-decoration:underline;'>تواصل مباشرة عبر واتساب مع م. صافي (0785181866)</a>";
 
